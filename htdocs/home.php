@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Redirects user to login page if not logged in
+if (!isset($_SESSION['login_status'])) {
+    header(`Location: index.html`);
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +17,8 @@
     <title>Home</title>
 </head>
 <body>
-    <?php
-        $int = "Hello World";
-    ?>
+    <a href="profile.php">Profile</a>
+    <a href="logout.php">Logout</a>
+    <p>Welcome back!</p>
 </body>
 </html>
