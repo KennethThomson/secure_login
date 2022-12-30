@@ -24,9 +24,6 @@ img {
     max-width: 100%;
     height: auto;
     width: 150px;
-}
-
-img {
     transition: all 0.2s ease 0s;
     cursor: pointer;
 }
@@ -34,7 +31,6 @@ img {
 img:hover {
     transform: scale(1.02);
     transition: all 0.2s ease 0s;
-
 }
 
 
@@ -47,6 +43,7 @@ div.input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
 }
 
 form {
@@ -56,10 +53,10 @@ form {
     align-items: center;
 }
 
-h1 {
+h1, h2 {
     font-family: "Vintage";
     color: #347326;
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 400;
 }
 
@@ -67,16 +64,15 @@ hr {
     background-color: #7F5C29;
     height: 5px;
     width: 300px;
-    border-radius: 38px;
+    border-radius: 34px;
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
 input {
     background: #FFFFFF;
-    border-radius: 38px;
     border: 0;    
-    border-radius: 41px;
+    border-radius: 34px;
     font-size: 20px;
     padding: 16px 20px 12px;
     width: 350px;
@@ -87,30 +83,25 @@ input::placeholder {
     color: #BEBEBE;
 }
 
-#login {
+input[type="submit"] {
     color: #367227;
     background: rgba(54, 114, 39, 0.17);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 40px 8px;
-    border: 0;
     margin: 30px;
     width: 150px;
     transition: all 0.1s ease 0s;
     cursor: pointer;
 }
 
-#login:hover {
+input[type="submit"]:hover {
     transform: scale(1.1);
     transition: all 0.1s ease 0s;
 }
 
 p {
-    margin: 10px;
     color: #7F5C29;
     font-size: 20px;
+    margin: 0;
 }
 
 a {
@@ -120,4 +111,29 @@ a {
 
 a:hover {
     filter: brightness(125%);
+}
+
+.info {
+    background: #F9F5E7;
+    margin: 80px;
+    padding: 80px;
+    font-size: 20px;
+    border-radius: 34px;
+    box-shadow: 10px 10px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.info p {
+    margin: 20px 0 10px;
+}
+
+td {
+    padding: 10px 30px 10px 0px;
+}
+
+#logout {
+    margin: 0;
 }

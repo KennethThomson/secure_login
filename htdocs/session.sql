@@ -2,9 +2,9 @@
 
 CREATE TABLE IF NOT EXISTS `accounts` (
     `id` int(10) NOT NULL AUTO_INCREMENT,
-    `username` varchar(50) NOT NULl UNIQUE,
+    `username` varchar(50) NOT NULL UNIQUE,
     `password` varchar(255) NOT NULL,
-    `email` varchar(255) NOT NULL,
+    `email` varchar(255) NOT NULL UNIQUE,
     PRIMARY KEY (`id`) 
 ) ENGINE=InnoDB;
 

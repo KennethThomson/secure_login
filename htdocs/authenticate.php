@@ -35,7 +35,7 @@ if (isset($_POST['email'], $_POST['password'])) {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$result) {
-        echo "Email and/or Password is Incorrect!";
+        echo '<script>alert("Incorrect Email and/or Password. Please try again.")</script>';
     } else {
         // Checks to see if the password matches the hashed version in the database
         if (password_verify($password, $result['password'])) {
@@ -44,7 +44,7 @@ if (isset($_POST['email'], $_POST['password'])) {
             $_SESSION['id'] = $result['id'];
             header('Location: home.php');
         } else {
-            echo "Email and/or Password is Incorrect!";
+            echo '<script>alert("Incorrect Email and/or Password. Please try again.")</script>';
         }
     }
 }
