@@ -25,6 +25,14 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 
 * Finally, run `index.html` from your web server.
 
+
+![Log In Page](./login.png)
+
+![Sign Up Page](./signup.png)
+
+![Home Page](./home.png)
+
+
 ## References
 * [CodeShack's Secure Login System with PHP and MySQL](https://codeshack.io/secure-login-system-php-mysql/)
 * [CodeShack's Secure Registration System with PHP and MySQL](https://codeshack.io/secure-registration-system-php-mysql/)
