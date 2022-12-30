@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Log In</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -17,14 +17,15 @@
         <img src="assets/logo.svg" alt="logo" />
     </div>
     <div class="input">
-        <h1>log in</h1>
+        <h1>sign up</h1>
         <hr>
-        <form action="authenticate.php" method="post">
+        <form action="signup.php" method="post" autocomplete="off">
+            <input type="text" name="username" placeholder="username" id="username" required>
             <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="email" id="email" required>
             <input type="password" name="password" placeholder="password" id="password" required>
-            <input type="submit" value="log in" name="login" id="login">
+            <input type="submit" value="sign up" name="signup" id="signup">
         </form>
-        <p>don't have an account? <a href="signup.html">sign up with email</a>!</p>
+        <p>already have an account? <a href="index.html">log in</a>!</p>
     </div>
 </body>
 </html>
